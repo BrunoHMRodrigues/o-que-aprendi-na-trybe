@@ -45,7 +45,7 @@ main {
     
 }
 
-#secao-01-unix-e-bash {
+.formatar-secao {
     background-color: rgb(32, 36, 36);
     padding: 5px;
     border: 4px solid rgb(148, 142, 142);    
