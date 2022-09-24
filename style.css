@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Formatando o cabeçalho */
+.formatar-header-footer {
+    background-color: rgb(190, 161, 161);
+    padding: 5px;
+    border: 4px solid rgb(148, 142, 142);
+}
+.formatar-header-footer h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+/* Formatando Navegação */
+nav {
+    background-color: rgb(32, 36, 36);
+    padding: 5px;
+    border: 4px solid rgb(148, 142, 142); 
+    
+    display: inline-block;
+    position: fixed;
+    
+    width: 12em;
+    height: 50em;
+}
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+main {
+    display: inline-block;
+    position: relative;
+    width: 86.3%;
+    left: 13em;
+    
+}
+
+#secao-01-unix-e-bash {
+    background-color: rgb(32, 36, 36);
+    padding: 5px;
+    border: 4px solid rgb(148, 142, 142);    
+}
+
+main section section h2 {
+    text-align: center;
+    text-decoration:underline;
+}
