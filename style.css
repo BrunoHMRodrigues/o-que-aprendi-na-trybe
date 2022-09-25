@@ -9,7 +9,7 @@ body {
     border: 3px solid rgb(148, 142, 142);
     font-weight: bold;
     text-align: center;
-    width:max-content;
+    width:70%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 2px;
@@ -27,6 +27,8 @@ body {
     padding: 2px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Estilizando Tabelas */

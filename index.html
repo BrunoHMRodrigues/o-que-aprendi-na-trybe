@@ -76,9 +76,9 @@
 
                 <p class="importante">Arquivos tem uma série de informações atreladas a eles:</p>
 
-                <div class="imagens">
-                    <img src="./Imagens/informacoes-arquivos.png" alt="Esquema de informações guardadas nos arquivos. Fonte: http://www.bloghardwaremicrocamp.com.br/wp-content/uploads/2012/08/perm.png">
-                </div>
+                <div class="imagens"> <img src="./Imagens/Informações-arquivos.gif"> </div>
+
+                <div class="imagens"><img src="./Imagens/esquema.jpg" alt=""></div>
                 
                 <!-- Subseção 01 - Unix, Kernel e Shell -->
                 <h3>Terminal</h3>    
@@ -141,7 +141,7 @@
                         <tr>
                             <td>cat nome_arquivo.tipo_arquivo</td>
                             <td>Mostra conteúdo de um arquivo</td>
-                            <td><span class="propriedades"></span> </td>
+                            <td><span class="propriedades">> : Atribuir inputs do usuário ao conteúdo do arquivo (ctrl + d para sair)</span> <span><strong>Ao usar o > você estará alterando o conteúdo do arquivo, caso já houvesse algo nele o conteúdo seria substituido</strong></span> <span class="propriedades">>> : Edita o conteúdo do arquivo acrescentando novos valores (ctrl + d para sair)</span> <span class="propriedades">> : Pode atribuir inputs do usuário ao conteúdo do arquivo (ctrl + d para sair)</span>>cat arquivo1 arquivo2 > arquivo3 : Irá criar um novo arquivo com o conteúdo dos arquivos chamados antes do ></td>
                         </tr>
 
                         <!-- mv - move -->
@@ -199,6 +199,20 @@
                             <td>Mostra a quantidade de linhas, palavras e caracteres do conteúdo de um arquivo </td>
                             <td> <span class="propriedades">w : Mostra apenas a quantidade de palavras</span> <span class="propriedades">l : Mostra apenas a quantidade de linhas</span> <span class="propriedades">c : mostra apenas a quantidade de caracteres</span> </td>
                         </tr>
+
+                        <!-- sort -->
+                        <tr>
+                            <td>sort</td>
+                            <td>Classifica o conteúdo de um arquivo</td>
+                            <td> <span class="propriedades">< arquivo : Mostra o conteúdo do arquivo ordenados sem modificar a ordem dentro do arquivo (forma de output)</span> <span class="propriedades">< arquivo > arquivo_ordenado</arquivo>: Cria um arquivo com o conteúdo ordenado </span>  </td>
+                        </tr>
+
+                        <!-- who -->
+                        <tr>
+                            <td>who</td>
+                            <td>Mostra que usuário esta usando o sistema</td>
+                            <td> <span class="propriedades"></span></td>
+                        </tr>
                         
                     </table>
 
@@ -207,7 +221,13 @@
 
                 <p class="importante">As propriedades podem ser utilizadas colocando um "-" após o comando e mais de uma propriedade pode ser utilizada ao mesmo tempo, independente da ordem de chamada dos mesmos. Ex: ls -1a ou ls -a1</p>
 
-                <p class="importante"> Caso queira mais informação sobre um comando você pode usar comando --help para ver mais informações sobre ele</p>
+                <p class="importante"> Caso queira mais informação sobre um comando você pode usar: man comando para exibir o manual do comando ou comando --help para ver mais informações sobre ele</p>
+
+                <p class="importante">whatis comando mostra o que o comando faz; apropos termo busca todos os comando que possam ter relação com o que foi digitado Ex: apropos copy</p>
+
+                <p class="importante"> Coringas: ? pode ser utilizado para substituir um caractere, enquanto * substitui qualquer número de caracteres, sendo muito úteis ao fazer pesquisas pelo terminal. Ex.: ls ?rybe.txt traria os arquivos e pastas do diretório atual que começassem com qualquer caracter desde que após ele houvesse rybe.txt ; ls trybe* traria todos os arquivos que seus nomes começassem com trybe independente do que viesse depois</p>
+
+                <p class="importante"> | pode ser usado para passar o output de um comando para um novo comando Ex: who | sort : resultado do who é enviado para o comando sort que o ordena e o mostrará</p>
             </section>
 
             <!-- Seção 03/1.2 - Git, Github e Internet -->
