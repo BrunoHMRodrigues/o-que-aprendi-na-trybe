@@ -3,6 +3,32 @@ body {
     color: white;
 }
 
+.importante {
+    background-color: rgb(190, 161, 161);
+    border: 3px solid rgb(148, 142, 142);
+    font-weight: bold;
+    text-align: center;
+    width:max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    
+}
+
+.imagens {
+    background-color: rgb(190, 161, 161);
+    border: 3px solid rgb(148, 142, 142);
+    width:max-content;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
 /* Formatando o cabeçalho */
 .formatar-header-footer {
     background-color: rgb(190, 161, 161);
