@@ -80,9 +80,134 @@
                     <img src="./Imagens/informacoes-arquivos.png" alt="Esquema de informações guardadas nos arquivos. Fonte: http://www.bloghardwaremicrocamp.com.br/wp-content/uploads/2012/08/perm.png">
                 </div>
                 
-                    
-                    
+                <!-- Subseção 01 - Unix, Kernel e Shell -->
+                <h3>Terminal</h3>    
                 
+                <!-- Comandos -->
+                <section class="secao-tabelas">
+                    <header>Tabela de Comandos Terminal</header>
+                    
+                    <table class="conteudo-tabela">
+                        <!-- Cabeçalho Tabela Comandos Terminal -->
+                        <tr>
+                            <th class="tabela-comandos-coluna-1">Comandos</th>
+                            <th class="tabela-comandos-coluna-2">Função</th>
+                            <th class="tabela-comandos-coluna-3">Propriedades</th>
+                        </tr>
+
+                        <!-- ls -->
+                        <tr>
+                            <td>ls</td>
+                            <td>Mostrar arquivos e pastas do diretório</td>
+                            <td><span class="propriedades">a :mostra todos os arquivos do diretório (incluindo os ocultos)</span> <span class="propriedades">l : Lista permissões, número de entidades, dono, grupo, tamanho do arquivo, data e hora da última atualização e nome do arquivo</span> <span class="propriedades">1 : Apresenta um arquivo por linha</span> </td>
+                        </tr>
+
+                        <!-- pwd -->
+                        <tr>
+                            <td>pwd</td>
+                            <td>Mostra o caminho para o diretório atual</td>
+                            <td></td>
+                        </tr>
+
+                        <!-- cd -->
+                        <tr>
+                            <td>cd nome_diretorio</td>
+                            <td>Usado para entrar em um diretório</td>
+                            <td> <span class="propriedades">nome_diretorio : Entra em um diretório digitado que esteja dentro do diretório atual</span> <span class="propriedades">caminho_diretório_desejado : Se move diretamente para o diretório do caminho digitado</span> <span class="propriedades">. : Diretório atual</span> <span class="propriedades">.. : Retorna para o diretório pai do atual</span> <span class="propriedades">/ : Retornar para o diretório raiz do sistema</span> <span class="propriedades">~ : Ir para o diretório Home do usuário logado</span> <span class="propriedades">../../ : Ir para o diretório dois níceis acima do atual</span> </td>
+                        </tr>
+
+                        <!-- mkdir -->
+                        <tr>
+                            <td>mkdir nome_diretorio</td>
+                            <td>Cria diretórios e subdiretórios</td>
+                            <td><span class="propriedades"></span> </td>
+                        </tr>
+
+                        <!-- touch -->
+                        <tr>
+                            <td>touch nome_arquivo</td>
+                            <td>Cria arquivos com o nome e do tipo digitado</td>
+                            <td><span class="propriedades"></span> </td>
+                        </tr>
+
+                        <!-- cp -->
+                        <tr>
+                            <td>cp nome_arquivo nome_arquivo_copia</td>
+                            <td>Copia um arquivo para o diretório atual com o nome e tipo do novo arquivo digitado</td>
+                            <td></td>
+                        </tr>
+
+                        <!-- cat -->
+                        <tr>
+                            <td>cat nome_arquivo.tipo_arquivo</td>
+                            <td>Mostra conteúdo de um arquivo</td>
+                            <td><span class="propriedades"></span> </td>
+                        </tr>
+
+                        <!-- mv - move -->
+                        <tr>
+                            <td>mv nome_arquivo caminho_destino</td>
+                            <td>Copia um arquivo para o diretório atual com o nome e tipo do novo arquivo digitado</td>
+                            <td> <span class="propriedades">f : Arquivo é movido independente se estará substituindo um arquivo já existente</span> <span class="propriedades">i : Arquivo é movido e caso exista um arquivo de mesmo nome ele pergunta se deseja continuar</span> <span class="propriedades">n : Nunca substituirá um arquivo existente</span> <span class="propriedades"> <strong>Caso mais de uma dessas propriedades seja chamada a última é que será usada</strong> </span></td>
+                        </tr>
+
+                        <!-- rm - remove -->
+                        <tr>
+                            <td>rm nome_arquivo</td>
+                            <td>Remove um arquivo existente</td>
+                            <td> <span class="propriedades">f : Ignora arquivos e argumentos não existentes e remove sem questionar</span> <span class="propriedades">i : Pergunta antes de apagar o arquivo</span> <span class="propriedades">r ou R : Remove diretórios e seus conteúdos</span> <span class="propriedades"> <strong>Pode ser utilizado com -f para apagar a pasta e conteúdo dentro dela sem fazer perguntas. Ex. rm -rf nome_diretorio</strong> </span> <span class="propriedades">d ou dir : Remove diretório vazio (Equivalente a rmdir)</span> </td>
+                        </tr>
+
+                        <!-- rmdir - remove directory -->
+                        <tr>
+                            <td>rmdir nome_diretorio</td>
+                            <td>Remove um diretório vazio existente</td>
+                            <td> <span class="propriedades">f : Ignora arquivos e argumentos não existentes e remove sem questionar</span> <span class="propriedades">i : Pergunta antes de apagar o arquivo</span> <span class="propriedades">r ou R : Remove diretórios e seus conteúdos</span> <span class="propriedades"> <strong>Pode ser utilizado com -f para apagar a pasta e conteúdo dentro dela sem fazer perguntas</strong> </span> <span class="propriedades">d ou dir : Remove diretório vazio (Equivalente a rmdir)</span> </td>
+                        </tr>
+
+                        <!-- less -->
+                        <tr>
+                            <td>less nome_arquivo</td>
+                            <td>Exibe conteúdo de um arquivo em partes criando páginas (barra de espaço - muda de página ; q sai da paginação)</td>
+                            <td> <span class="propriedades"></span> <span> <strong>Dentro da janela do less /palavra faz uma pesquisa da palavra no conteúdo do arquivo (Ucase sensitive) n para seguir entre o conteúdo encontrado</strong> </span> </td>
+                        </tr>
+
+                        <!-- head -->
+                        <tr>
+                            <td>head nome_arquivo</td>
+                            <td>Mostra as 10 primeiras linhas de um arquivo</td>
+                            <td> <span class="propriedades">numero_desejado : mostra uma quantidade de linhas iguais ao numero digitado</span> </td>
+                        </tr>
+
+                        <!-- tail -->
+                        <tr>
+                            <td>tail nome_arquivo</td>
+                            <td>Mostra as 10 últimas linhas de um arquivo</td>
+                            <td> <span class="propriedades">numero_desejado : mostra uma quantidade de linhas iguais ao numero digitado</span> </td>
+                        </tr>
+
+                        <!-- grep -->
+                        <tr>
+                            <td>grep palavra_buscada nome_arquivo</td>
+                            <td>Mostra o resultado da busca pela palavra digitada dentro do conteúdo do arquivo (Ucase sensitive)</td>
+                            <td> <span class="propriedades">i : Torna a busca independente de maiusculo ou minúsculo</span> <span> <strong>Caso queira pesquisar uma frase a escreva entre aspas simples ou duplas</strong> </span> <span class="propriedades">v : Trará os valores que não correspondem a pesquisa</span> <span class="propriedades">n : Mostra a linha onde foi encontrada a busca junto com seu conteúdo</span> <span class="propriedades">c : Mostra a quantidade de vezes que o conteúdo foi encontrado no conteúdo do arquivo</span> </td>
+                        </tr>
+
+                        <!-- wc - word count -->
+                        <tr>
+                            <td>wc nome_arquivo</td>
+                            <td>Mostra a quantidade de linhas, palavras e caracteres do conteúdo de um arquivo </td>
+                            <td> <span class="propriedades">w : Mostra apenas a quantidade de palavras</span> <span class="propriedades">l : Mostra apenas a quantidade de linhas</span> <span class="propriedades">c : mostra apenas a quantidade de caracteres</span> </td>
+                        </tr>
+                        
+                    </table>
+
+                    
+                </section>
+
+                <p class="importante">As propriedades podem ser utilizadas colocando um "-" após o comando e mais de uma propriedade pode ser utilizada ao mesmo tempo, independente da ordem de chamada dos mesmos. Ex: ls -1a ou ls -a1</p>
+
+                <p class="importante"> Caso queira mais informação sobre um comando você pode usar comando --help para ver mais informações sobre ele</p>
             </section>
 
             <!-- Seção 03/1.2 - Git, Github e Internet -->

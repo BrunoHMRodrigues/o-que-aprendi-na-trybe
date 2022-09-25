@@ -29,6 +29,44 @@ body {
     margin-right: auto;
 }
 
+/* Estilizando Tabelas */
+.secao-tabelas {
+    background-color: rgb(190, 161, 161);
+    border: 4px solid rgb(148, 142, 142);
+    width: max-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.secao-tabelas header{
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid white;  
+}
+.conteudo-tabela, tr, td, th {
+    border: 1px solid white; 
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/* Formatar a largura das colunas da tabela */
+.tabela-comandos-coluna-1 {
+    width: 10px;
+}
+.tabela-comandos-coluna-2 {
+    width: 150px;
+}
+.tabela-comandos-coluna-3 {
+    width: 800px;
+}
+/* Formatar a seção de propriedades dos comandos */
+.propriedades {
+    display: block;
+    text-align: left;
+}
+
 /* Formatando o cabeçalho */
 .formatar-header-footer {
     background-color: rgb(190, 161, 161);
