@@ -115,6 +115,10 @@ nav a:hover {
     font-weight: 900;
     font-size: 18px;
 }
+/* Posicionando subseção da navegação */
+.nav-subsecao {
+    margin-left: 10px;
+}
 
 .titulo-modulo{
     text-align: center;
