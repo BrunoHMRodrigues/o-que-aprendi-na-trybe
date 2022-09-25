@@ -151,6 +151,10 @@ main {
     width: 100%;
 }
 
+#itens-informacoes-arquivos {
+    text-align: center;
+}
+
 main section section h2 {
     text-align: center;
     text-decoration:underline;
