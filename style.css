@@ -70,9 +70,8 @@ body {
 }
 
 /* Formatando o cabeçalho */
-.formatar-header-footer {
-    background-color: rgb(190, 161, 161);
-    padding: 5px;
+.formatar-header, .formatar-footer {
+    background-color: rgb(190, 161, 161);    
     border: 4px solid rgb(148, 142, 142);
     position:fixed;
     z-index: 999;
@@ -80,11 +79,20 @@ body {
 
     /* Posicionando Header */
     left: 0;
-    top: 0;
 }
-.formatar-header-footer h1{
+.formatar-header h1, .formatar-footer h1{
     text-align: center;
     text-decoration: underline;
+}
+.formatar-header {
+    top: 0;
+    padding: 5px;
+    height: 9%;
+}
+.formatar-footer {
+    bottom: 0;
+    font-size: 6px;
+    height: 3%;
 }
 
 
@@ -104,7 +112,7 @@ nav {
     
     /* Dimensionando Navegação */
     width: 12em;
-    height: 50em;
+    height: 88%;
 }
 nav a {
     display: block;
@@ -146,4 +154,10 @@ main {
 main section section h2 {
     text-align: center;
     text-decoration:underline;
+}
+
+/* Footer */
+
+.formatar-footer {
+
 }
