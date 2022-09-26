@@ -313,9 +313,73 @@
                 <h3>Git</h3>
                 
                 <p>
-                    ?
+                    Git é um sistema de versionamento. Ele possibilita que seja possível criar pontos de acesso para alterações realizadas de forma que você possa acessá-las quando for necessário. Dessa forma, caso ocorra algum problema com um programa é possível voltar para uma versão anterior do mesmo onde ele funcionava normalmente, isso sem mencionar a maior organização de um projeto que usa o Git, afinal não será mais necessário a criação de diversos arquivos de diferentes nomes com versões diferentes do projeto, sendo muito mais fácil de gerenciar projetos.
                 </p>
 
+                <p>
+                    O versionamento do Git parte de um projeto principal, comumente conhecido como "main", os projetistas partem dele criando novas ramificações (branch) onde alterações serão realizadas para serem unidas a versão principal, dessa forma é possível imaginar que o versionamento de um projeto é como uma árvore com ramos que ao serem finalizados vão sendo unidos ao tronco que aos poucos se desenvolve.
+                </p>
+
+                <p>
+                    Enquanto se desenvolve uma ramificação do projeto são salvos pontos de alterações (commit), esses pontos podem ser acessados caso necessário e mostram o desenvolvimento daquele ramo do projeto e quando o ramo é finalmente terminado é realizado a união (merge), ou mesclagem, dele ao ramo principal (branch main).
+                </p>
+
+
+
+                <section class="secao-tabelas">
+                    <header>Tabela de Comandos Git</header>
+                    <table class="conteudo-tabela">
+                        <!-- Cabeçalho Tabela Comandos Terminal -->
+                        <tr>
+                            <th class="tabela-comandos-coluna-1">Comandos</th>
+                            <th class="tabela-comandos-coluna-2">Função</th>
+                            <th class="tabela-comandos-coluna-3">Propriedades</th>
+                        </tr>
+
+                        <!-- status -->
+                        <tr>
+                            <td>git status</td>
+                            <td>?</td>
+                            <td><span class="propriedades"></td>
+                        </tr>
+
+                        <!-- add -->
+                        <tr>
+                            <td>git add</td>
+                            <td>?</td>
+                            <td><span class="propriedades"></td>
+                        </tr>
+
+                        <!-- commit -->
+                        <tr>
+                            <td>git commit</td>
+                            <td>?</td>
+                            <td><span class="propriedades"></td>
+                        </tr>
+
+                        <!-- push -->
+                        <tr>
+                            <td>git push</td>
+                            <td>?</td>
+                            <td><span class="propriedades"></td>
+                        </tr>
+
+                        <!-- pull -->
+                        <tr>
+                            <td>git pull</td>
+                            <td>?</td>
+                            <td><span class="propriedades"></td>
+                        </tr>
+                    </table>
+                </section>
+
+                <h4>Boas Práticas</h4>
+
+                <ul>
+                    <li>Evite trabalhar no cranch main: Lembre de trabalhar em ramificações para poder realizar alterações sem medo, afinal, ao trabalhar em uma ramificação você não estará afetando o projeto principal de forma a não gerar riscos ao projeto caso algum problema ocorra</li>
+                    <li>Ao criar uma branch se certifique em que branch você se encontra: A branch é como um filho da branch atual, tenha cuidado para não criar uma branch a partir de uma errada</li>
+                    <li>Realize commits com frequência: os commits são pontos de retorno caso algo dê errado e quão mais freqwuente sejam feitos mais atual será o projeto a se retornar quando um problema ocorra</li>
+                </ul>
                 <!-- Subseção 02 - Github -->
                 <h3>Github</h3>
 
