@@ -8,7 +8,7 @@
 () Concluir inserção de todo o conteúdo de todos os módulos e suas Seções
 
 () Concluir conteúdo do Módulo 01 - Fundamentos
-() Concluir conteúdo do Módulo 01 - Seção 01 - Unix & Bash
+(x) Concluir conteúdo do Módulo 01 - Seção 01 - Unix & Bash
 () Concluir conteúdo do Módulo 01 - Seção 02 - Git, Github e Internet
 () Concluir conteúdo do Módulo 01 - Seção 03 - HTML e CSS
 () Concluir conteúdo do Módulo 01 - Seção 04 - Javascript
