@@ -324,6 +324,13 @@
                     Enquanto se desenvolve uma ramificação do projeto são salvos pontos de alterações (commit), esses pontos podem ser acessados caso necessário e mostram o desenvolvimento daquele ramo do projeto e quando o ramo é finalmente terminado é realizado a união (merge), ou mesclagem, dele ao ramo principal (branch main).
                 </p>
 
+                <h3>Repositórios</h3>
+
+                <p>
+                    Repositório Local: Repositório no seu computador (teinha sido baixado da internet ou criado por você)
+                    Repositório Remoto: Repositório acessível na internet, hospedado em alguma plataforma de hospedagem como o Github.
+                </p>
+
 
 
                 <section class="secao-tabelas">
@@ -336,49 +343,80 @@
                             <th class="tabela-comandos-coluna-3">Propriedades</th>
                         </tr>
 
+                        <!-- init -->
+                        <tr>
+                            <td>git init</td>
+                            <td>Cria um repositório local</td>
+                            <td><span class="propriedades"></span></td>
+                        </tr>
+
+                        <!-- branch -->
+                        <tr>
+                            <td>git branch</td>
+                            <td>Mostra todas as branchs e um * na branch em que você se encontra, mas também pode ser utilizado para criar ou renomear branchs</td>
+                            <td><span class="propriedades">nome_branch : Cria uma nova branch com o nome digitado a partir da branch atual</span><span class="propriedades">m nome: Altera o nome da branch atual</span></td>
+                        </tr>
+
+                        <!-- checkout -->
+                        <tr>
+                            <td>git checkout branch</td>
+                            <td>Sai da branch atual para a branch digitada</td>
+                            <td><span class="propriedades">b : Usado para criar um novo branch a partir do branch atual e automaticamente se mover para ele</span></td>
+                        </tr>
+
                         <!-- status -->
                         <tr>
                             <td>git status</td>
-                            <td>?</td>
-                            <td><span class="propriedades"></td>
+                            <td>Mostra todas as alterações realizadas e se estão em Stage ou não</td>
+                            <td><span class="propriedades"></span></td>
                         </tr>
 
                         <!-- add -->
                         <tr>
                             <td>git add</td>
-                            <td>?</td>
-                            <td><span class="propriedades"></td>
+                            <td>Adiciona arquivos para a fase de stage</td>
+                            <td><span class="propriedades">nome arquivo: Adiciona somente o arquivo, ou arquivos se forem digitados mais de um, digitado ao stage para commit</span><span>. : Adiciona todos os elementos listados no git status ao stage para commit</span></td>
                         </tr>
 
                         <!-- commit -->
                         <tr>
-                            <td>git commit</td>
-                            <td>?</td>
-                            <td><span class="propriedades"></td>
+                            <td>git commit -m "descrição do que foi alterado"</td>
+                            <td>Cria um ponto de acesso das alterações em stage. A mensagem digitada é importante para descrever o que foi modificado</td>
+                            <td><span class="propriedades"></span></td>
+                        </tr>
+
+                        <!-- merge -->
+                        <tr>
+                            <td>git merge noemda_branch"</td>
+                            <td>Trás o conteúdo da branch digitada para a branch atual ao realizar o merge delas</td>
+                            <td><span class="propriedades"><strong></strong></span></td>
                         </tr>
 
                         <!-- push -->
                         <tr>
                             <td>git push</td>
                             <td>?</td>
-                            <td><span class="propriedades"></td>
+                            <td><span class="propriedades"></span></td>
                         </tr>
 
                         <!-- pull -->
                         <tr>
                             <td>git pull</td>
                             <td>?</td>
-                            <td><span class="propriedades"></td>
+                            <td><span class="propriedades"></span></td>
                         </tr>
                     </table>
                 </section>
 
+                <p class="importante"> Tome muito cuidado ao realizar um merge! Tenha certeza que você se encontra na branch correta e que a esta unindo com a devida branch secundária</p>
+
                 <h4>Boas Práticas</h4>
 
                 <ul>
-                    <li>Evite trabalhar no cranch main: Lembre de trabalhar em ramificações para poder realizar alterações sem medo, afinal, ao trabalhar em uma ramificação você não estará afetando o projeto principal de forma a não gerar riscos ao projeto caso algum problema ocorra</li>
+                    <li>Atualmente se costuma nomear a branch principal como main: Você pode usar o seguinte comando para configurar o nome main como padrão: <strong>git config --global init.defaultBranch main</strong></li>
+                    <li>Evite trabalhar no branch main: Lembre de trabalhar em ramificações para poder realizar alterações sem medo, afinal, ao trabalhar em uma ramificação você não estará afetando o projeto principal de forma a não gerar riscos ao projeto caso algum problema ocorra</li>
                     <li>Ao criar uma branch se certifique em que branch você se encontra: A branch é como um filho da branch atual, tenha cuidado para não criar uma branch a partir de uma errada</li>
-                    <li>Realize commits com frequência: os commits são pontos de retorno caso algo dê errado e quão mais freqwuente sejam feitos mais atual será o projeto a se retornar quando um problema ocorra</li>
+                    <li>Realize commits com frequência: os commits ajudam a acompanhar as alterações realizadas, a correção de erros no código e funcionam como pontos de retorno caso algo dê errado.</li>
                 </ul>
                 <!-- Subseção 02 - Github -->
                 <h3>Github</h3>
