@@ -177,7 +177,7 @@
                         <tr>
                             <td>cat nome_arquivo.tipo_arquivo</td>
                             <td>Mostra conteúdo de um arquivo</td>
-                            <td><span class="propriedades">> : Atribuir inputs do usuário ao conteúdo do arquivo (ctrl + d para sair)</span> <span><strong>Ao usar o > você estará alterando o conteúdo do arquivo, caso já houvesse algo nele o conteúdo seria substituido</strong></span> <span class="propriedades">>> : Edita o conteúdo do arquivo acrescentando novos valores (ctrl + d para sair)</span> <span class="propriedades">> : Pode atribuir inputs do usuário ao conteúdo do arquivo (ctrl + d para sair)</span>>cat arquivo1 arquivo2 > arquivo3 : Irá criar um novo arquivo com o conteúdo dos arquivos chamados antes do ></td>
+                            <td><span class="propriedades">> : Atribuir inputs do usuário ao conteúdo do arquivo (ctrl + d para sair)</span> <span class="propriedades"><strong>Ao usar o > você estará alterando o conteúdo do arquivo, caso já houvesse algo nele o conteúdo seria substituido</strong></span> <span class="propriedades">>> : Edita o conteúdo do arquivo acrescentando novos valores (ctrl + d para sair)</span> <span class="propriedades">> : Pode atribuir inputs do usuário ao conteúdo do arquivo (ctrl + d para sair)</span><span class="propriedades"><strong>cat arquivo1 arquivo2 > arquivo3 : Irá criar um novo arquivo com o conteúdo dos arquivos chamados antes do ></strong></span></td>
                         </tr>
 
                         <!-- mv - move -->
@@ -391,20 +391,6 @@
                             <td>Trás o conteúdo da branch digitada para a branch atual ao realizar o merge delas</td>
                             <td><span class="propriedades"><strong></strong></span></td>
                         </tr>
-
-                        <!-- push -->
-                        <tr>
-                            <td>git push</td>
-                            <td>?</td>
-                            <td><span class="propriedades"></span></td>
-                        </tr>
-
-                        <!-- pull -->
-                        <tr>
-                            <td>git pull</td>
-                            <td>?</td>
-                            <td><span class="propriedades"></span></td>
-                        </tr>
                     </table>
                 </section>
 
@@ -440,6 +426,46 @@
                 <p>
                     SSH (Secure Shell): Protocolo ode criptografia que permitira transferir dados de forma segura sem que seja necessário digitar seu nome e chave de acesso pessoal ao executar cada comando. 
                 </p>
+
+                <section class="secao-tabelas">
+                    <header>Tabela de Comandos Git</header>
+                    <table class="conteudo-tabela">
+                        <!-- Cabeçalho Tabela Comandos Terminal -->
+                        <tr>
+                            <th class="tabela-comandos-coluna-1">Comandos</th>
+                            <th class="tabela-comandos-coluna-2">Função</th>
+                            <th class="tabela-comandos-coluna-3">Propriedades</th>
+                        </tr>
+
+                        <!-- clone -->
+                        <tr>
+                            <td>git clone url_repositorio</td>
+                            <td>Clona um repositório remoto para um diretório local</td>
+                            <td><span class="propriedades"></span></td>
+                        </tr>
+
+                        <!-- fetch -->
+                        <tr>
+                            <td>git fetch</td>
+                            <td>Faz o download dos commits, referências e arquivos do repositório remoto para o local possibilitando que você veja as mudanças realizadas e decida se quer mantê-las (merge) ou não. Dessa forma utilizá-lo não fará mal ao repositório local onde você trabalha, pois ele só se alterará se você fizer o merge</td>
+                            <td><span class="propriedades"></span></td>
+                        </tr>
+
+                        <!-- pull -->
+                        <tr>
+                            <td>git pull</td>
+                            <td>Atualiza a branch local para que fique igual a remota. É equivalente a utilizar o git fetch + git merge.</td>
+                            <td><span class="propriedades"></span></td>
+                        </tr>
+
+                        <!-- push -->
+                        <tr>
+                            <td>git push</td>
+                            <td>manda as alterações realizadas no repositório local para o repositório remoto</td>
+                            <td><span class="propriedades"><strong>Lembre de realizar o git add e git commit antes do push</strong></span><span class="propriedades">u origin novo_branch : Utilizar quando vai realizar o primeiro push de uma nova branch para que o branch seja rastreado</span></td>
+                        </tr>
+                    </table>
+                </section>
                 
                 <!-- Subseção 03 - Internet -->
                 <h3>Internet</h3>
