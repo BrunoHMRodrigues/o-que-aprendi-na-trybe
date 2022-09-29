@@ -182,10 +182,52 @@ main {
     text-align: center;
 }
 
-main section section h2 {
+h2 {
+    font-size: 30px;
     text-align: center;
     text-decoration:underline;
 }
+h3 {
+    font-size: 26px;
+    text-decoration: underline;
+}
+h4 {
+    font-size: 22px;
+    margin-left: 10px;
+}
+h5 {
+    font-size: 18px;
+    text-align: center;
+}
+
+#comunicacao-repositorios {
+    background-color: rgb(190, 161, 161);
+    border: 3px solid white;
+    width: max-content;  
+    height: max-content;  
+    margin-left: auto;
+    margin-right: auto;
+}
+#comunicacao-repositorios h5 {
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+}
+#remoto-local {
+    display: inline-block;
+    border: 1px solid white;
+    height: max-content;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#local-remoto {
+    display: inline-block;
+    border: 1px solid white;
+    height: max-content;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 /* Footer */
 
