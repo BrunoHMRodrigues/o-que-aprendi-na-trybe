@@ -52,6 +52,9 @@
 
 <!-- Estilização -->
 () Concluir estilização da página
+    () Procurar imagem melhor para boneco de comentários (preferencia aparecendo somente partes do boneco na lateral)
+    (x) Criar estilo temporário para a página
+    () Decidir estilo final da página
 
 <!-- Navegação -->
 () Concluir Seção de Navegação
