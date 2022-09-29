@@ -19,6 +19,32 @@ body {
     
 }
 
+.boneco-comentario, .balao-fala {
+    display: inline-block;
+}
+.boneco {
+    block-size: 150px;
+}
+.balao-fala {
+    position:absolute;
+}
+.balao {
+    width: 240px;
+    height: 110px;
+}
+/* Verificar forma para quando o texto de comentario for grande reajustar automatico */
+.comentário-texto {
+    position: absolute;
+    z-index: 999;
+    font-size: 14px;
+    font-weight: 900;
+    width: 180px;
+    left: 45px;
+    top: 10px;
+    
+    color: black;
+}
+
 /* Formatando Imagens ao longo do conteúdo */
 .imagens {
     background-color: rgb(190, 161, 161);
