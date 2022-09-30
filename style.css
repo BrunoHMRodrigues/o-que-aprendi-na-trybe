@@ -1,0 +1,242 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Formatando as caixas de textos importantes */
+.importante {
+    background-color: rgb(190, 161, 161);
+    border: 3px solid rgb(148, 142, 142);
+    font-weight: bold;
+    text-align: center;
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    
+}
+
+.boneco-comentario, .balao-fala {
+    display: inline-block;
+}
+.boneco {
+    block-size: 150px;
+}
+.balao-fala {
+    position:absolute;
+}
+.balao {
+    width: 240px;
+    height: 110px;
+}
+/* Verificar forma para quando o texto de comentario for grande reajustar automatico */
+.comentário-texto {
+    position: absolute;
+    z-index: 999;
+    font-size: 14px;
+    font-weight: 900;
+    width: 180px;
+    left: 45px;
+    top: 10px;
+    
+    color: black;
+}
+
+/* Formatando Imagens ao longo do conteúdo */
+.imagens {
+    background-color: rgb(190, 161, 161);
+    border: 3px solid rgb(148, 142, 142);
+    width:max-content;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilizando Tabelas */
+.secao-tabelas {
+    background-color: rgb(190, 161, 161);
+    border: 4px solid rgb(148, 142, 142);
+    width: max-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.secao-tabelas header{
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid white;  
+}
+.conteudo-tabela, tr, td, th {
+    border: 1px solid white; 
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/* Formatar a largura das colunas da tabela */
+.tabela-comandos-coluna-1 {
+    width: 10px;
+}
+.tabela-comandos-coluna-2 {
+    width: 280px;
+}
+.tabela-comandos-coluna-3 {
+    width: 800px;
+}
+/* Formatar a seção de propriedades dos comandos */
+.propriedades {
+    display: block;
+    text-align: left;
+}
+
+/* Formatando o cabeçalho */
+.formatar-header, .formatar-footer {
+    background-color: rgb(190, 161, 161);    
+    border: 4px solid rgb(148, 142, 142);
+    position:fixed;
+    z-index: 999;
+    width: 100%;
+
+    /* Posicionando Header */
+    left: 0;
+}
+.formatar-header h1, .formatar-footer h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.formatar-header {
+    top: 0;
+    padding: 5px;
+    height: 9%;
+}
+.formatar-footer {
+    bottom: 0;
+    font-size: 6px;
+    height: 3%;
+}
+
+
+/* Formatando Navegação */
+nav {
+    /* Estilizando Seção de Navegação */
+    background-color: rgb(32, 36, 36);
+    padding: 10px;
+    border: 4px solid rgb(148, 142, 142); 
+    
+    font-size: 14px;
+    /* Posicionando Navegação */
+    display: inline-block;
+    position: fixed;
+    top: 95px;
+    left: 0;
+    
+    /* Dimensionando Navegação */
+    width: 12em;
+    height: 88%;
+}
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    font-weight: 900;
+    font-size: 18px;
+}
+/* Posicionando subseção da navegação */
+.nav-subsecao {
+    margin-left: 10px;
+}
+
+.titulo-modulo{
+    text-align: center;
+    background-color: rgb(32, 36, 36);
+    padding: 20px;
+    border: 4px solid rgb(148, 142, 142); 
+    font-size: 34px;
+    width: 100%;
+}
+main {
+    display: inline-block;
+    position: relative;
+    width: 85%;
+    top: 59px;
+    left: 200px;
+    
+}
+
+.formatar-secao {
+    background-color: rgb(32, 36, 36);
+    padding: 20px;
+    border: 4px solid rgb(148, 142, 142);   
+    width: 100%;
+}
+
+#itens-informacoes-arquivos {
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    text-decoration:underline;
+}
+h3 {
+    font-size: 26px;
+    text-decoration: underline;
+}
+h4 {
+    font-size: 22px;
+    margin-left: 10px;
+}
+h5 {
+    font-size: 18px;
+    text-align: center;
+}
+
+#comunicacao-repositorios {
+    background-color: rgb(190, 161, 161);
+    border: 3px solid white;
+    width: max-content;  
+    height: max-content;  
+    margin-left: auto;
+    margin-right: auto;
+}
+#comunicacao-repositorios h5 {
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+}
+#remoto-local {
+    display: inline-block;
+    border: 1px solid white;
+    height: max-content;
+    width: 500px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+#local-remoto {
+    display: inline-block;
+    border: 1px solid white;
+    height: max-content;
+    width: 500px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.subitem-lista {
+    margin-left: 10px;
+    width: 100%;
+}
+
+
+/* Footer */
+
+.formatar-footer {
+
+}

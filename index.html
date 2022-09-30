@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Seção 01 - Cabeçalho da página -->
+    <header class="formatar-header">
+        <h1 >
+            O que Aprendi na Trybe
+        </h1>
+    </header>
+
+    <!-- Seção 02 - Navegação -->
+    <nav>
+        <a href="#fundamentos">Fundamentos</a>
+            <div class="nav-subsecao">
+                <a class="" href="#secao-01-unix-e-bash">Unix & Bash</a>
+                <a href="#secao-02-git-github-internet">Git, Github e Internet</a>
+                <a href="#secao-03-html-e-css">HTML e CSS</a>
+                <a href="secao-04-javascript">Javascript</a>
+            </div>
+
+        <a href="#front-end">Front-End</a>
+            <!-- <div class="nav-subsecao">
+                <a class="" href="">?</a>
+                <a href="">?</a>
+                <a href="">?</a>
+                <a href="">?</a>
+            </div> -->
+
+        <a href="#back-end">Back-End</a>
+            <!-- <div class="nav-subsecao">
+                <a class="" href="">?</a>
+                <a href="">?</a>
+                <a href="">?</a>
+                <a href="">?</a>
+            </div> -->
+
+        <a href="#ciencia-da-computacao">Ciência da Computação</a>
+            <!-- <div class="nav-subsecao">
+                <a class="" href="">?</a>
+                <a href="">?</a>
+                <a href="">?</a>
+                <a href="">?</a>
+            </div> -->
+    </nav>
+        
+    <!-- Seção 03 - Conteúdo -->
+    <main>
+        <!-- Seção 03/1 - Módulo 01 - Fundamentos -->
+        <section id="fundamentos" class="formatar-módulo">
+            <header><h1 class="titulo-modulo">Módulo 01 - Fundamentos</h1></header>
+            
+            <!-- Seção 03/1.1 - Unix & Bash -->
+            <section id="secao-01-unix-e-bash" class="formatar-secao">
+                <h2>Unix & Bash</h2>
+
+                <!-- Subseção 01 - Unix, Kernel e Shell -->
+                <h3>Unix, Kernel e Shell</h3>
+                
+                <!-- Unix -->
+
+                <p>
+                    Unix: É um <strong>Sistema Operacional</strong>, usado como base para vários sistemas operacionais subsequentes e por isso considerado o pai dos sistemas operacionais. características: portável, multitarefas.
+                </p>
+
+                <p class="importante">portável: Pode ser adaptado para os mais diversos sistemas computacionais facilmente</p>
+
+                <!-- Kernel -->
+                <p>
+                    Kernel: É o <strong>núcleo</strong> do sistema operacional. Responsável por fazer a <strong>interação entre o Hardware e os Softwares</strong>. Ele <strong>gerencia</strong> os recursos do sistema, é quem faz a detecção de todo o hardware necessário para funcionamento da máquina quando o computador é ligado e é ele quem administra as principais funções da máquina, além do gerenciamento da <strong>memória, processos e arquivos</strong> do computador.
+                </p>
+
+                <p class="importante">O Kernel traduz comandos do usuário em instruções para a máquina</p>
+                
+                <!-- Shell -->
+                <p>
+                    Shell: É a <strong>interface</strong> entre o sistema operacional, usuário e o núcleo do sistema. <strong>Interface linha de comando</strong> e <strong>interface gráfica de usuário</strong>. Função: <strong>Ler</strong> linha de comando, <strong>interpretar</strong>, <strong>executar</strong> comando e <strong>devolver</strong> seu resultado ao usuário.
+                </p>
+                
+                <p class="importante">Exemplos de Shell: SH, BASH, CSH, TCSH, ZSH</p>
+                
+                <!-- Aplicativos -->
+                <p>
+                    <strong>Aplicativos</strong>: Softwares usados pelo usuário e maioria dos comandos do Unix
+                </p>
+
+                <p>
+                    <strong>Processos</strong>: Tudo que é realizado no Unix: tarefas e comandos realizados. Processos possuem identificadores (PID) que carregam diversas informações sobre eles.
+                </p>
+
+                <p>
+                    <strong>Arquivos</strong>: São os arquivos, dispositivos e até mesmo os diretórios.
+                </p>
+
+                <p class="importante">Organizados em hierarquia de raiz, com seu nível mais alto sendo o "/" (diretório raiz). Arquivos tem uma série de informações atreladas a eles: </p>
+
+                <p class="importante">Arquivos tem uma série de informações atreladas a eles:</p>
+
+                <div class="imagens"> <img src="./Imagens/Informações-arquivos.gif"> </div>
+
+                <div id="itens-informacoes-arquivos">
+                    <p>Permissões: Tipo de item e nível de permissão para leitura, escrita e execução do item ou diretório.</p>
+                    <p>Links: Quantidade de ligações que o item possui</p>
+                    <p>Proprietário: Dono do arquivo ou diretório, a pessoa que o criou</p>
+                    <p>Grupo: O grupo ao qual o arquivo ou diretório pertence. Serve para dar permissões a outras pessoas</p>
+                    <p>Tamanho: Tamanho em bytes</p>
+                    <p>Data e Hora: Momento da ultima atualização, criação ou modificação</p>
+                    <p>Nome: Nome do arquivo ou diretório</p>
+                </div>
+
+                <div class="imagens"><img src="./Imagens/esquema.jpg" alt=""></div>
+                
+                <!-- Subseção 01 - Unix, Kernel e Shell -->
+                <h3>Terminal</h3>    
+                
+                <p>
+                    Interface de linha de comando que recebe instruções digitadas pelo usuário e as repassa para o sistema operacional.
+                </p>
+
+                
+                <div class="boneco-comentario">
+                    <img class="boneco" src="./Imagens/boneco-comentario.png" alt="boneco desenhado. source: https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.clipartmax.com%2Fpng%2Fmiddle%2F68-684729_boneco-apontando-png.png&imgrefurl=https%3A%2F%2Fwww.clipartmax.com%2Fmiddle%2Fm2i8G6K9H7b1Z5A0_boneco-apontando-png%2F&tbnid=HhvuuC_A_PEikM&vet=12ahUKEwiBgMOvirr6AhXBKLkGHahGB1cQMygAegUIARDHAQ..i&docid=wwfRtuDxiVF6EM&w=840&h=1313&q=bonequinho%20apontando%20para%20cima&ved=2ahUKEwiBgMOvirr6AhXBKLkGHahGB1cQMygAegUIARDHAQ">
+
+                    <div class="balao-fala">
+                        <img class="balao" src="./Imagens/balao-comentario.png" alt="Balão de fala. source: https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F64%2F85%2F4c%2F64854c3d5c603731a5150abef6ffd733.jpg&imgrefurl=https%3A%2F%2Fbr.pinterest.com%2Fpin%2F1050675788038727080%2F&tbnid=8E2z4dX7glkVDM&vet=12ahUKEwji-8Dnirr6AhVGN7kGHeLTBPEQMygVegUIARCLAg..i&docid=e8clPTGw8xWdXM&w=880&h=842&q=bal%C3%A3o%20fala&ved=2ahUKEwji-8Dnirr6AhVGN7kGHeLTBPEQMygVegUIARCLAg">
+                        <p class="comentário-texto">Exemplo de Shell, lembram dele?</p>
+                    </div>
+                </div>
+
+                <!-- Comandos -->
+                <section class="secao-tabelas">
+                    <header>Tabela de Comandos Terminal</header>
+                    
+                    <table class="conteudo-tabela">
+                        <!-- Cabeçalho Tabela Comandos Terminal -->
+                        <tr>
+                            <th class="tabela-comandos-coluna-1">Comandos</th>
+                            <th class="tabela-comandos-coluna-2">Função</th>
+                            <th class="tabela-comandos-coluna-3">Propriedades</th>
+                        </tr>
+
+                        <!-- ls -->
+                        <tr>
+                            <td>ls</td>
+                            <td>Mostrar arquivos e pastas do diretório</td>
+                            <td><span class="propriedades">a :mostra todos os arquivos do diretório (incluindo os ocultos)</span> <span class="propriedades">l : Lista permissões, número de entidades, dono, grupo, tamanho do arquivo, data e hora da última atualização e nome do arquivo</span> <span class="propriedades">1 : Apresenta um arquivo por linha</span> </td>
+                        </tr>
+
+                        <!-- pwd -->
+                        <tr>
+                            <td>pwd</td>
+                            <td>Mostra o caminho para o diretório atual</td>
+                            <td></td>
+                        </tr>
+
+                        <!-- cd -->
+                        <tr>
+                            <td>cd nome_diretorio</td>
+                            <td>Usado para entrar em um diretório</td>
+                            <td> <span class="propriedades">nome_diretorio : Entra em um diretório digitado que esteja dentro do diretório atual</span> <span class="propriedades">caminho_diretório_desejado : Se move diretamente para o diretório do caminho digitado</span> <span class="propriedades">. : Diretório atual</span> <span class="propriedades">.. : Retorna para o diretório pai do atual</span> <span class="propriedades">/ : Retornar para o diretório raiz do sistema</span> <span class="propriedades">~ : Ir para o diretório Home do usuário logado</span> <span class="propriedades">../../ : Ir para o diretório dois níceis acima do atual</span> </td>
+                        </tr>
+
+                        <!-- mkdir -->
+                        <tr>
+                            <td>mkdir nome_diretorio</td>
+                            <td>Cria diretórios e subdiretórios</td>
+                            <td><span class="propriedades"></span> </td>
+                        </tr>
+
+                        <!-- touch -->
+                        <tr>
+                            <td>touch nome_arquivo</td>
+                            <td>Cria arquivos com o nome e do tipo digitado</td>
+                            <td><span class="propriedades"></span> </td>
+                        </tr>
+
+                        <!-- cp -->
+                        <tr>
+                            <td>cp nome_arquivo nome_arquivo_copia</td>
+                            <td>Copia um arquivo para o diretório atual com o nome e tipo do novo arquivo digitado</td>
+                            <td></td>
+                        </tr>
+
+                        <!-- cat -->
+                        <tr>
+                            <td>cat nome_arquivo.tipo_arquivo</td>
+                            <td>Mostra conteúdo de um arquivo</td>
+                            <td><span class="propriedades">> : Atribuir inputs do usuário ao conteúdo do arquivo (ctrl + d para sair)</span> <span class="propriedades"><strong>Ao usar o > você estará alterando o conteúdo do arquivo, caso já houvesse algo nele o conteúdo seria substituido</strong></span> <span class="propriedades">>> : Edita o conteúdo do arquivo acrescentando novos valores (ctrl + d para sair)</span> <span class="propriedades">> : Pode atribuir inputs do usuário ao conteúdo do arquivo (ctrl + d para sair)</span><span class="propriedades"><strong>cat arquivo1 arquivo2 > arquivo3 : Irá criar um novo arquivo com o conteúdo dos arquivos chamados antes do ></strong></span></td>
+                        </tr>
+
+                        <!-- mv - move -->
+                        <tr>
+                            <td>mv nome_arquivo caminho_destino</td>
+                            <td>Copia um arquivo para o diretório atual com o nome e tipo do novo arquivo digitado</td>
+                            <td> <span class="propriedades">f : Arquivo é movido independente se estará substituindo um arquivo já existente</span> <span class="propriedades">i : Arquivo é movido e caso exista um arquivo de mesmo nome ele pergunta se deseja continuar</span> <span class="propriedades">n : Nunca substituirá um arquivo existente</span> <span class="propriedades"> <strong>Caso mais de uma dessas propriedades seja chamada a última é que será usada</strong> </span></td>
+                        </tr>
+
+                        <!-- rm - remove -->
+                        <tr>
+                            <td>rm nome_arquivo</td>
+                            <td>Remove um arquivo existente</td>
+                            <td> <span class="propriedades">f : Ignora arquivos e argumentos não existentes e remove sem questionar</span> <span class="propriedades">i : Pergunta antes de apagar o arquivo</span> <span class="propriedades">r ou R : Remove diretórios e seus conteúdos</span> <span class="propriedades"> <strong>Pode ser utilizado com -f para apagar a pasta e conteúdo dentro dela sem fazer perguntas. Ex. rm -rf nome_diretorio</strong> </span> <span class="propriedades">d ou dir : Remove diretório vazio (Equivalente a rmdir)</span> </td>
+                        </tr>
+
+                        <!-- rmdir - remove directory -->
+                        <tr>
+                            <td>rmdir nome_diretorio</td>
+                            <td>Remove um diretório vazio existente</td>
+                            <td> <span class="propriedades">f : Ignora arquivos e argumentos não existentes e remove sem questionar</span> <span class="propriedades">i : Pergunta antes de apagar o arquivo</span> <span class="propriedades">r ou R : Remove diretórios e seus conteúdos</span> <span class="propriedades"> <strong>Pode ser utilizado com -f para apagar a pasta e conteúdo dentro dela sem fazer perguntas</strong> </span> <span class="propriedades">d ou dir : Remove diretório vazio (Equivalente a rmdir)</span> </td>
+                        </tr>
+
+                        <!-- less -->
+                        <tr>
+                            <td>less nome_arquivo</td>
+                            <td>Exibe conteúdo de um arquivo em partes criando páginas (barra de espaço - muda de página ; q sai da paginação)</td>
+                            <td> <span class="propriedades"></span> <span> <strong>Dentro da janela do less /palavra faz uma pesquisa da palavra no conteúdo do arquivo (Ucase sensitive) n para seguir entre o conteúdo encontrado</strong> </span> </td>
+                        </tr>
+
+                        <!-- head -->
+                        <tr>
+                            <td>head nome_arquivo</td>
+                            <td>Mostra as 10 primeiras linhas de um arquivo</td>
+                            <td> <span class="propriedades">numero_desejado : mostra uma quantidade de linhas iguais ao numero digitado</span> </td>
+                        </tr>
+
+                        <!-- tail -->
+                        <tr>
+                            <td>tail nome_arquivo</td>
+                            <td>Mostra as 10 últimas linhas de um arquivo</td>
+                            <td> <span class="propriedades">numero_desejado : mostra uma quantidade de linhas iguais ao numero digitado</span> </td>
+                        </tr>
+
+                        <!-- grep -->
+                        <tr>
+                            <td>grep palavra_buscada nome_arquivo</td>
+                            <td>Mostra o resultado da busca pela palavra digitada dentro do conteúdo do arquivo (Ucase sensitive)</td>
+                            <td> <span class="propriedades">i : Torna a busca independente de maiusculo ou minúsculo</span> <span> <strong>Caso queira pesquisar uma frase a escreva entre aspas simples ou duplas</strong> </span> <span class="propriedades">v : Trará os valores que não correspondem a pesquisa</span> <span class="propriedades">n : Mostra a linha onde foi encontrada a busca junto com seu conteúdo</span> <span class="propriedades">c : Mostra a quantidade de vezes que o conteúdo foi encontrado no conteúdo do arquivo</span> </td>
+                        </tr>
+
+                        <!-- wc - word count -->
+                        <tr>
+                            <td>wc nome_arquivo</td>
+                            <td>Mostra a quantidade de linhas, palavras e caracteres do conteúdo de um arquivo </td>
+                            <td> <span class="propriedades">w : Mostra apenas a quantidade de palavras</span> <span class="propriedades">l : Mostra apenas a quantidade de linhas</span> <span class="propriedades">c : mostra apenas a quantidade de caracteres</span> </td>
+                        </tr>
+
+                        <!-- sort -->
+                        <tr>
+                            <td>sort</td>
+                            <td>Classifica o conteúdo de um arquivo</td>
+                            <td> <span class="propriedades">< arquivo : Mostra o conteúdo do arquivo ordenados sem modificar a ordem dentro do arquivo (forma de output)</span> <span class="propriedades">< arquivo > arquivo_ordenado</arquivo>: Cria um arquivo com o conteúdo ordenado </span>  </td>
+                        </tr>
+
+                        <!-- who -->
+                        <tr>
+                            <td>who</td>
+                            <td>Mostra que usuário esta usando o sistema</td>
+                            <td> <span class="propriedades"></span></td>
+                        </tr>
+
+                        <!-- chmod -->
+                        <tr>
+                            <td>chmod</td>
+                            <td>Altera permissões de acesso de arquivos</td>
+                            <td> <span class="propriedades">u : alterações para o usuário</span> <span class="propriedades">g : alterações para o grupo</span> <span class="propriedades">o : alterações para outros usuários</span> <span class="propriedades">a : alterações para todos os usuário</span> <span class="propriedades">+ : aumentar permissão</span> <span class="propriedades">- : retirar permissão</span> <span class="propriedades">= : deixar permissões assim como digitadas</span> <span class="propriedades">r, w, x : qual a permissão que você esta alterando</span> <span><strong>Ex: chmod u-rw : retira as permissões r e w do usuário</strong></span></td>
+                        </tr>
+
+                        <!-- ps -->
+                        <tr>
+                            <td>ps</td>
+                            <td>Mostra os processos sendo executados</td>
+                            <td> <span class="propriedades"></span></td>
+                        </tr>
+
+                        <!-- find -->
+                        <tr>
+                            <td>find .</td>
+                            <td>Pesquisa no diretórios por arquivos e pastas de acordo com os parâmetros digitados</td>
+                            <div>
+                                <td> <span class="propriedades">name "texto":pesquisa pelo texto</span> <span class="propriedades">type d ou type f : pesquisa por todos os diretórios ou arquivos, respectivamente</span></td>
+                            </div>
+                            
+                            
+                        </tr>
+
+                        <!-- history -->
+                        <tr>
+                            <td>history</td>
+                            <td>Mostra os histórico de comandos utilizados no terminal</td>
+                            <td> <span class="propriedades"></span></td>
+                        </tr>
+
+                        <!-- echo -->
+                        <tr>
+                            <td>echo "texto"</td>
+                            <td>Utilizado para exibir mensagens na tela ou em um arquivo</td>
+                            <td> <span class="propriedades">> arquivo :Insere o conteúdo digitado em um arquivo</span></td>
+                        </tr>
+                        
+                    </table>
+
+                    
+                </section>
+
+                <p class="importante">As propriedades podem ser utilizadas colocando um "-" após o comando e mais de uma propriedade pode ser utilizada ao mesmo tempo, independente da ordem de chamada dos mesmos. Ex: ls -1a ou ls -a1</p>
+
+                <p class="importante"> Caso queira mais informação sobre um comando você pode usar: man comando para exibir o manual do comando ou comando --help para ver mais informações sobre ele</p>
+
+                <p class="importante">whatis comando mostra o que o comando faz; apropos termo busca todos os comando que possam ter relação com o que foi digitado Ex: apropos copy</p>
+
+                <p class="importante"> Coringas: ? pode ser utilizado para substituir um caractere, enquanto * substitui qualquer número de caracteres, sendo muito úteis ao fazer pesquisas pelo terminal. Ex.: ls ?rybe.txt traria os arquivos e pastas do diretório atual que começassem com qualquer caracter desde que após ele houvesse rybe.txt ; ls trybe* traria todos os arquivos que seus nomes começassem com trybe independente do que viesse depois</p>
+
+                <p class="importante"> | pode ser usado para passar o output de um comando para um novo comando Ex: who | sort : resultado do who é enviado para o comando sort que o ordena e o mostrará</p>
+            </section>
+
+            <!-- Seção 03/1.2 - Git, Github e Internet -->
+            <section id="secao-02-git-github-internet" class="formatar-secao">
+                <h2>Git, Github e Internet</h2>
+
+                <!-- Subseção 01 - Git -->
+                <h3>Git</h3>
+                
+                <p>
+                    Git é um sistema de versionamento. Ele possibilita que seja possível criar pontos de acesso para alterações realizadas de forma que você possa acessá-las quando for necessário. Dessa forma, caso ocorra algum problema com um programa é possível voltar para uma versão anterior do mesmo onde ele funcionava normalmente, isso sem mencionar a maior organização de um projeto que usa o Git, afinal não será mais necessário a criação de diversos arquivos de diferentes nomes com versões diferentes do projeto, sendo muito mais fácil de gerenciar projetos.
+                </p>
+
+                <p>
+                    O versionamento do Git parte de um projeto principal, comumente conhecido como "main", os projetistas partem dele criando novas ramificações (branch) onde alterações serão realizadas para serem unidas a versão principal, dessa forma é possível imaginar que o versionamento de um projeto é como uma árvore com ramos que ao serem finalizados vão sendo unidos ao tronco que aos poucos se desenvolve.
+                </p>
+
+                <p>
+                    Enquanto se desenvolve uma ramificação do projeto são salvos pontos de alterações (commit), esses pontos podem ser acessados caso necessário e mostram o desenvolvimento daquele ramo do projeto e quando o ramo é finalmente terminado é realizado a união (merge), ou mesclagem, dele ao ramo principal (branch main).
+                </p>
+
+                <h3>Repositórios</h3>
+
+                <p>
+                    Repositório Local: Repositório no seu computador (teinha sido baixado da internet ou criado por você)
+                    Repositório Remoto: Repositório acessível na internet, hospedado em alguma plataforma de hospedagem como o Github.
+                </p>
+
+
+
+                <section class="secao-tabelas">
+                    <header>Tabela de Comandos Git</header>
+                    <table class="conteudo-tabela">
+                        <!-- Cabeçalho Tabela Comandos Terminal -->
+                        <tr>
+                            <th class="tabela-comandos-coluna-1">Comandos</th>
+                            <th class="tabela-comandos-coluna-2">Função</th>
+                            <th class="tabela-comandos-coluna-3">Propriedades</th>
+                        </tr>
+
+                        <!-- init -->
+                        <tr>
+                            <td>git init</td>
+                            <td>Cria um repositório local</td>
+                            <td><span class="propriedades"></span></td>
+                        </tr>
+
+                        <!-- branch -->
+                        <tr>
+                            <td>git branch</td>
+                            <td>Mostra todas as branchs e um * na branch em que você se encontra, mas também pode ser utilizado para criar ou renomear branchs</td>
+                            <td><span class="propriedades">nome_branch : Cria uma nova branch com o nome digitado a partir da branch atual</span><span class="propriedades">m nome: Altera o nome da branch atual</span></td>
+                        </tr>
+
+                        <!-- checkout -->
+                        <tr>
+                            <td>git checkout branch</td>
+                            <td>Sai da branch atual para a branch digitada</td>
+                            <td><span class="propriedades">b : Usado para criar um novo branch a partir do branch atual e automaticamente se mover para ele</span></td>
+                        </tr>
+
+                        <!-- status -->
+                        <tr>
+                            <td>git status</td>
+                            <td>Mostra todas as alterações realizadas e se estão em Stage ou não</td>
+                            <td><span class="propriedades"></span></td>
+                        </tr>
+
+                        <!-- add -->
+                        <tr>
+                            <td>git add</td>
+                            <td>Adiciona arquivos para a fase de stage</td>
+                            <td><span class="propriedades">nome arquivo: Adiciona somente o arquivo, ou arquivos se forem digitados mais de um, digitado ao stage para commit</span><span>. : Adiciona todos os elementos listados no git status ao stage para commit</span></td>
+                        </tr>
+
+                        <!-- commit -->
+                        <tr>
+                            <td>git commit -m "descrição do que foi alterado"</td>
+                            <td>Cria um ponto de acesso das alterações em stage. A mensagem digitada é importante para descrever o que foi modificado</td>
+                            <td><span class="propriedades"></span></td>
+                        </tr>
+
+                        <!-- merge -->
+                        <tr>
+                            <td>git merge nome_da_branch"</td>
+                            <td>Trás o conteúdo da branch digitada para a branch atual ao realizar o merge delas</td>
+                            <td><span class="propriedades"><strong></strong></span></td>
+                        </tr>
+                    </table>
+                </section>
+
+                <p class="importante"> Tome muito cuidado ao realizar um merge! Tenha certeza que você se encontra na branch correta e que a esta unindo com a devida branch secundária</p>
+
+                <h4>Boas Práticas</h4>
+
+                <ul>
+                    <li>Atualmente se costuma nomear a branch principal como main: Você pode usar o seguinte comando para configurar o nome main como padrão: <strong>git config --global init.defaultBranch main</strong></li>
+                    <li>Evite trabalhar no branch main: Lembre de trabalhar em ramificações para poder realizar alterações sem medo, afinal, ao trabalhar em uma ramificação você não estará afetando o projeto principal de forma a não gerar riscos ao projeto caso algum problema ocorra</li>
+                    <li>Ao criar uma branch se certifique em que branch você se encontra: A branch é como um filho da branch atual, tenha cuidado para não criar uma branch a partir de uma errada</li>
+                    <li>Realize commits com frequência: os commits ajudam a acompanhar as alterações realizadas, a correção de erros no código e funcionam como pontos de retorno caso algo dê errado.</li>
+                </ul>
+                <!-- Subseção 02 - Github -->
+                <h3>Github</h3>
+
+                <p>
+                    Plataforma é uma plataforma de hospedagem onde você pode salvar e gerenciar seus projetos de forma remota.
+                </p>
+
+                <p>
+                    Autenticação: Para trabalhar com o Github é necessário criar uma conexão entre o Git (local) e o Github (remoto) e para isso é necessário fazer uma autenticação.
+                </p>
+
+                <h4>HTTPS ou SSH</h4>
+
+                <p>
+                    HTTPS(Hypertext Transfer Protocol Secure): Extensão do protocolo de internet HTTP que utiliza certificados digitais para autenticar dados e permite que sejam criptografados.
+                </p>
+
+                <p class="importante"> Ao utilizar o HTTPS você precisará criar um token de acesso que será utilizado no lugar de sua senha quando for necessário.</p>
+
+                <p>
+                    SSH (Secure Shell): Protocolo ode criptografia que permitira transferir dados de forma segura sem que seja necessário digitar seu nome e chave de acesso pessoal ao executar cada comando. 
+                </p>
+
+                <section class="secao-tabelas">
+                    <header>Tabela de Comandos Git</header>
+                    <table class="conteudo-tabela">
+                        <!-- Cabeçalho Tabela Comandos Terminal -->
+                        <tr>
+                            <th class="tabela-comandos-coluna-1">Comandos</th>
+                            <th class="tabela-comandos-coluna-2">Função</th>
+                            <th class="tabela-comandos-coluna-3">Propriedades</th>
+                        </tr>
+
+                        <!-- clone -->
+                        <tr>
+                            <td>git clone url_repositorio</td>
+                            <td>Clona um repositório remoto para um diretório local</td>
+                            <td><span class="propriedades"></span></td>
+                        </tr>
+
+                        <!-- fetch -->
+                        <tr>
+                            <td>git fetch</td>
+                            <td>Faz o download dos commits, referências e arquivos do repositório remoto para o local possibilitando que você veja as mudanças realizadas e decida se quer mantê-las (merge) ou não. Dessa forma utilizá-lo não fará mal ao repositório local onde você trabalha, pois ele só se alterará se você fizer o merge</td>
+                            <td><span class="propriedades"></span></td>
+                        </tr>
+
+                        <!-- pull -->
+                        <tr>
+                            <td>git pull</td>
+                            <td>Atualiza a branch local para que fique igual a remota. É equivalente a utilizar o git fetch + git merge.</td>
+                            <td><span class="propriedades"></span></td>
+                        </tr>
+
+                        <!-- push -->
+                        <tr>
+                            <td>git push</td>
+                            <td>manda as alterações realizadas no repositório local para o repositório remoto</td>
+                            <td><span class="propriedades"><strong>Lembre de realizar o git add e git commit antes do push</strong></span><span class="propriedades">u origin novo_branch : Utilizar quando vai realizar o primeiro push de uma nova branch para que o branch seja rastreado (origin é o destino, no caso o repositório remoto que tem o nome origin, novo_branch é a origem, o branch que você fez alterações e esta mandando para o remoto</span></td>
+                        </tr>
+                    </table>                    
+                </section>
+
+                <h4>Comunicação repositórios: remoto <---> Local</h4>
+
+                <p>Ao se trabalhar com plataformas de hospedagem embora a forma de trabalhar em si seja a mesma:</p>
+                <p>- se cria uma branch onde as alterações serão realizadas</p>
+                <p>- faz-se os commits com frequência criando ponstos de salvamento e descrevendo as alterações que vão sendo realizadas</p>
+                <p>- se envia as alterações para o repositório remoto</p>
+
+                <p>A forma de conectar esses repositórios pode sofrer uma leve diferença de acordo por onde ela será criada: A partir de um repositório existente Local que deve ser conectado ao remoto, ou um remoto já existente que deverá ser trazido para um diretório local em sua máquina.</p>
+
+                <section id="comunicacao-repositorios">
+                    <h5>Remoto --> Local</h5>
+                    <section id="remoto-local">
+                        
+                        <p>
+                            <li>Clone o repositório remoto para um diretório local</li>
+                            <li>Crie um branch e o acesse para trabalhar nas alterações</li>
+                            <li>Add + Commit + Push para enviar suas alterações para o repositório remoto</li>
+                            <li class="subitem-lista">Lembranco que o primeiro push deve ser utilizado git push -u origin nome_branch : para que seja criado o rastreamento</li>
+                            <li>Após tudo estar testado Merge entre o branch pai e o branch criado no repositório remoto</li>
+                        </p>
+                    </section>
+
+                    <h5>Local --> Remoto</h5>
+                    <section id="local-remoto">
+                        
+                        <p>
+                            <li>Escolha o diretório onde será armazenado o projeto</li>
+                            <li>Use o Git init para criar um repositório git no diretório</li>
+                            <li>git remote add origin url</li>
+                            <!-- Confirmar informação -->
+                            <li class="subitem-lista">A url pode ser pega no seu repositório remoto que você quer ligar ao local. O comando estará conectando os dois e nomeando o repositório remoto como origin</li> 
+                            <li>Crie um branch e o acesse para trabalhar nas alterações</li>
+                            <li>Add + Commit + Push para enviar suas alterações para o repositório remoto</li>
+                            <li class="subitem-lista">Lembranco que o primeiro push deve ser utilizado git push -u origin nome_branch : para que seja criado o rastreamento</li>
+                            <li>Após tudo estar testado Merge entre o branch pai e o branch criado no repositório remoto</li>
+                        </p>
+                    </section>
+                    
+                </section>
+
+                <h4>Boas Práticas</h4>
+
+                <ul>
+                    <li>Lembre de criar branchs para trabalhar e evite fazer alterações diretas na main</li>
+                    <li>Faça commits com frequência: Os commits são importantes para criar pontos de salvamento e mostrar para sua equipe o que vem sendo feito</li>
+                    <li>Escreva descrições claras sobre o que foi realizado de alterações ao fazer seus commits: Isso ajudará sua equipe e até mesmo a você a acompanhar o desenvolvimento do projeto e na busca e correção de bugs</li>
+                </ul>
+                
+                <!-- Subseção 03 - Internet -->
+                <h3>Internet</h3>
+                <p>
+                    ?
+                </p>    
+            </section>
+
+            <!-- Seção 03/1.3 - HTML e CSS -->
+            <section id="secao-03-html-e-css" class="formatar-secao">
+                <h2>HTML e CSS</h2>
+
+                <!-- Subseção 01 - HTML -->
+                <h3>HTML</h3>
+                
+                <p>
+                    ?
+                </p>
+
+                <!-- Subseção 02 - CSS -->
+                <h3>CSS</h3>
+
+                <p>
+                    ?
+                </p>
+
+                <!-- Subseção 03 - Boas Práticas -->
+                <h3>Boas Práticas</h3>
+
+                <p>
+                    ?
+                </p>
+            </section>
+
+            <!-- Seção 03/1.4 - Javascript -->
+            <section id="secao-04-javascript" class="formatar-secao">
+                <h2>Javascript</h2>
+
+                <!-- Subseção 01 - Javascript -->
+                <h3>Javascript</h3>
+                
+                <p>
+                    ?
+                </p>
+
+                <!-- Subseção x - Boas Práticas -->
+                <h3>Boas Práticas</h3>
+
+                <p>
+                    ?
+                </p>
+            </section>
+
+        </section>
+
+        <!-- Seção 03/2 - Módulo 02 - Front-End -->
+        <section id="front-end" class="formatar-módulo">
+            <header><h1 class="titulo-modulo">Módulo 02 - Front-End</h1></header>
+            
+            <!-- Seção 03/2.1 - Javascript e Testes Assíncronos -->
+            <section id="secao-01-javascript-testes-assincronos" class="formatar-secao">
+                <h2>Javascript e Testes assíncronos</h2>
+
+                <!-- Subseção 01 - ? -->
+                <h3>?</h3>
+                
+                <!-- ? -->
+
+                <p>
+                    ?
+                </p>                
+            </section>
+
+            <!-- Seção 03/2.2 - ? -->
+            <section id="secao-02-?" class="formatar-secao">
+                <h2>?</h2>
+
+                <!-- Subseção 01 - ? -->
+                <h3>?</h3>
+                
+                <p>
+                    ?
+                </p>
+
+                    
+            </section>
+        </section>
+
+        <!-- Seção 03/3 - Módulo 03 - Back-End -->
+        <section id="back-end" class="formatar-módulo">
+
+        </section>
+
+        <!-- Seção 03/4 - Módulo 04 - Ciência da Computação -->
+        <section id="ciencia-da-computacao" class="formatar-módulo">
+
+        </section>
+    </main>
+
+    <footer class="formatar-footer"><h1>por Bruno Rodrigues - Turma 27 - Tribo A</h1></footer>
+</body>
+</html>
