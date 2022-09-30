@@ -29,7 +29,7 @@ body {
     position:absolute;
 }
 .balao {
-    width: 240px;
+    width: max-content;
     height: 110px;
 }
 /* Verificar forma para quando o texto de comentario for grande reajustar automatico */
@@ -38,12 +38,42 @@ body {
     z-index: 999;
     font-size: 14px;
     font-weight: 900;
-    width: 180px;
+    width:70%;
     left: 45px;
     top: 10px;
     
     color: black;
 }
+
+.comentario-pensativo, .balao-fala-grande {
+    display: inline-block;
+}
+.balao-fala-grande {
+    position:absolute;
+}
+.balao-grande {
+    width: 600px;
+    height: 120px;
+}
+.comentário-texto-grande {
+    position: absolute;
+    z-index: 999;
+    font-size: 12px;
+    font-weight: 900;
+    width:70%;
+    left: 110px;
+    top: 10px;
+    
+    color: black;
+}
+.comentario-pensativo, .emote-pensativo, .balao {
+    display: inline-block;
+}
+.emote-pensativo {
+    block-size: 60px;
+    margin-top: 80px;
+}
+
 
 /* Formatando Imagens ao longo do conteúdo */
 .imagens {
@@ -232,6 +262,15 @@ h5 {
 .subitem-lista {
     margin-left: 10px;
     width: 100%;
+}
+
+#lista-internet {
+    display: inline-block;
+    width: 50%;
+    margin-right: 80px;
+}
+ul#lista-internet {
+    vertical-align:top;
 }
 
 
