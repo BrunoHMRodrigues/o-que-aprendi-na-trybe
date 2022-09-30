@@ -22,9 +22,11 @@ Tanto o README como todos os arquivos presentes nesse projeto poderão sofrer al
             (x) Boas práticas de Git
             (x) Explicar sobre Github
             (x) Tabela comandos para Github
-            () Explicar como funciona a comunicação entre repositório local e remoto
-            () Verificar necessidade de uma seção para boas práticas para Github
-            () Explicar sobre funcionamento da internet
+            (x) Explicar como funciona a comunicação entre repositório local e remoto
+            () Concluir Boas práticas para Github
+                () Verificar se há mais boas práticas para serem acrescentadas
+            (x) Explicar sobre funcionamento da internet
+                () Verificar se o conteúdo pode ser melhorado ou se há algum erro no que ofi escrito
         () Concluir conteúdo do Módulo 01 - Seção 03 - HTML e CSS
             () Explicar sobre HTML
                 () Tabela de comandos HTML
