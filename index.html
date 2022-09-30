@@ -476,12 +476,20 @@
                         <tr>
                             <td>git push</td>
                             <td>manda as alterações realizadas no repositório local para o repositório remoto</td>
-                            <td><span class="propriedades"><strong>Lembre de realizar o git add e git commit antes do push</strong></span><span class="propriedades">u origin novo_branch : Utilizar quando vai realizar o primeiro push de uma nova branch para que o branch seja rastreado</span></td>
+                            <td><span class="propriedades"><strong>Lembre de realizar o git add e git commit antes do push</strong></span><span class="propriedades">u origin novo_branch : Utilizar quando vai realizar o primeiro push de uma nova branch para que o branch seja rastreado (origin é o destino, no caso o repositório remoto que tem o nome origin, novo_branch é a origem, o branch que você fez alterações e esta mandando para o remoto</span></td>
                         </tr>
                     </table>                    
                 </section>
 
                 <h4>Comunicação repositórios: remoto <---> Local</h4>
+
+                <p>Ao se trabalhar com plataformas de hospedagem embora a forma de trabalhar em si seja a mesma:</p>
+                <p>- se cria uma branch onde as alterações serão realizadas</p>
+                <p>- faz-se os commits com frequência criando ponstos de salvamento e descrevendo as alterações que vão sendo realizadas</p>
+                <p>- se envia as alterações para o repositório remoto</p>
+
+                <p>A forma de conectar esses repositórios pode sofrer uma leve diferença de acordo por onde ela será criada: A partir de um repositório existente Local que deve ser conectado ao remoto, ou um remoto já existente que deverá ser trazido para um diretório local em sua máquina.</p>
+
                 <section id="comunicacao-repositorios">
                     <h5>Remoto --> Local</h5>
                     <section id="remoto-local">
@@ -490,7 +498,8 @@
                             <li>Clone o repositório remoto para um diretório local</li>
                             <li>Crie um branch e o acesse para trabalhar nas alterações</li>
                             <li>Add + Commit + Push para enviar suas alterações para o repositório remoto</li>
-                            <li>Após tudo estar testado Merge entre o branch pai e o branch criado</li>
+                            <li class="subitem-lista">Lembranco que o primeiro push deve ser utilizado git push -u origin nome_branch : para que seja criado o rastreamento</li>
+                            <li>Após tudo estar testado Merge entre o branch pai e o branch criado no repositório remoto</li>
                         </p>
                     </section>
 
@@ -498,10 +507,15 @@
                     <section id="local-remoto">
                         
                         <p>
-                            <li>Clone o repositório remoto para um diretório local</li>
+                            <li>Escolha o diretório onde será armazenado o projeto</li>
+                            <li>Use o Git init para criar um repositório git no diretório</li>
+                            <li>git remote add origin url</li>
+                            <!-- Confirmar informação -->
+                            <li class="subitem-lista">A url pode ser pega no seu repositório remoto que você quer ligar ao local. O comando estará conectando os dois e nomeando o repositório remoto como origin</li> 
                             <li>Crie um branch e o acesse para trabalhar nas alterações</li>
                             <li>Add + Commit + Push para enviar suas alterações para o repositório remoto</li>
-                            <li>Após tudo estar testado Merge entre o branch pai e o branch criado</li>
+                            <li class="subitem-lista">Lembranco que o primeiro push deve ser utilizado git push -u origin nome_branch : para que seja criado o rastreamento</li>
+                            <li>Após tudo estar testado Merge entre o branch pai e o branch criado no repositório remoto</li>
                         </p>
                     </section>
                     

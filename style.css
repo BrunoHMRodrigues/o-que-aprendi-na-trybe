@@ -217,15 +217,21 @@ h5 {
     display: inline-block;
     border: 1px solid white;
     height: max-content;
-    padding-left: 10px;
+    width: 500px;
+    padding-left: 20px;
     padding-right: 10px;
 }
 #local-remoto {
     display: inline-block;
     border: 1px solid white;
     height: max-content;
-    padding-left: 10px;
+    width: 500px;
+    padding-left: 20px;
     padding-right: 10px;
+}
+.subitem-lista {
+    margin-left: 10px;
+    width: 100%;
 }
 
 
