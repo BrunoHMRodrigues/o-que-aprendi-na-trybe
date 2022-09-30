@@ -47,6 +47,16 @@ Tanto o README como todos os arquivos presentes nesse projeto poderão sofrer al
                 () Boas Práticas de Javascript
                 () Explicar sobre comunicação entre HTML e Javascript
                     () Tabela de comandos para trabalhar entre HTML e Javascript
+        () Concluir conteúdo do Móudlo 01 - Seção 05 - DOM
+            () Explicar sobre DOM
+                () Explicar sobre Seletores
+                () Explicar sobre como trabalhar com elementos
+                    () Explicar o que é um elemento e o que é um node
+                    () Explicar sobre busca, criação e remoção de elementos
+                () Explicar sobre Eventos
+                () Explicar sobre WEB Storage
+
+            
 
     () Concluir conteúdo do Módulo 02 - Front-End
 
