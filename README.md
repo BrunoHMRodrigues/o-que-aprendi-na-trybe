@@ -1,7 +1,9 @@
 # o-que-aprendi-na-trybe
 
 ## Propósito
+Criar uma página para inserir o conhecimento adquirido na Trybe de forma a estudá-lo e revisá-lo para maior entendimento e treiná-lo na prática ao utilizá-lo na página. A ideia é que a página se desenvolva junto com os conhecimentos adquiridos e que esse crescimento possa ser visto ao longo do histórico do versionamento.
 
+Tanto o README como todos os arquivos presentes nesse projeto poderão sofrer alterações, sendo deletados ou modificados com o tempo devido a novos conhecimentos e o melhor entendimento sobre a área. Incluindo o planejamento do que deve ser realizado no projeto que poderá ser visto a seguir, mas que a partir do momento que novas informações sejam absorvidas nas aulas podem ser parcialmente ou totalmente alterados (Como já aconteceu algumas vezes com novos itens sendo inseridos e itens que foram marcados como concluídos tendo que serem desmarcados, pois ao passar das aulas foi percebido que mais alguma coisa deveria ser abordada antes de poder ser considerado concluido).
 ## À Fazer
 
 <!-- Conteúdo -->
