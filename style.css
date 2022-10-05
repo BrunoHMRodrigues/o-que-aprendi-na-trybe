@@ -66,7 +66,10 @@ body {
     
     color: black;
 }
-.comentario-pensativo, .emote-pensativo, .balao {
+.comentario-pensativo {
+    display: block;
+}
+.emote-pensativo, .balao {
     display: inline-block;
 }
 .emote-pensativo {
